@@ -1,0 +1,134 @@
+{
+  "Appointments": [
+    {
+      "AppointmentID": "",
+      "AppointmentDate": "",
+      "AppointmentTime": "",
+      "DoctorName": "",
+      "Department": "",
+      "PetOwnerName": "",
+      "id": 1
+    },
+    {
+      "Name": "",
+      "Speciality": "",
+      "Address": "",
+      "id": 2
+    },
+    {
+      "Name": "",
+      "Speciality": "",
+      "Address": "",
+      "id": 3
+    },
+    {
+      "Name": "",
+      "Speciality": "",
+      "Address": "",
+      "id": 4
+    },
+    {
+      "Name": "Sefin",
+      "Speciality": "Sefin",
+      "Address": "Sefin",
+      "id": 5
+    },
+    {
+      "Name": "",
+      "Speciality": "",
+      "Address": "",
+      "id": 6
+    },
+    {
+      "Name": "dwewedwe",
+      "Speciality": "dwedwe",
+      "Address": "dwedwed",
+      "id": 7
+    },
+    {
+      "PetName": "Sefin",
+      "Department": "fdscsc",
+      "VetName": "scascdas",
+      "MoreDetails": "dasd",
+      "id": 8
+    },
+    {
+      "PetName": "",
+      "Department": "",
+      "VetName": "",
+      "MoreDetails": "cscsdcsdcsdcsdcvsdvdvdvcdcascsdcsdcsdcsdc",
+      "id": 9
+    }
+  ],
+  "Departments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "DepartmentName": "",
+      "id": 2
+    }
+  ],
+  "Vets": [
+    {
+      "Name": "Sefin",
+      "Speciality": "df",
+      "Address": "Shinu",
+      "id": 8
+    },
+    {
+      "Name": "QWXQXQX",
+      "Speciality": "",
+      "Address": "",
+      "id": 19
+    }
+  ],
+  "Pets": [
+    {
+      "id": 3
+    },
+    {
+      "Pets Owner FirstName": "",
+      "Pets Owner LastName": "",
+      "Pets OwnerEmail": "",
+      "Pets Name": "",
+      "PetsBreed": "",
+      "Pet Age": "",
+      "gender": "",
+      "Address": "",
+      "Phone": "",
+      "Biography": "",
+      "id": 4
+    }
+  ],
+  "Clinic": [
+    {
+      "id": 3
+    },
+    {
+      "Clinic Info": "",
+      "ClinicName": "",
+      "Cliniclocation": "",
+      "ClinicTimings": "",
+      "ClinicContactNumber": "",
+      "Description": "",
+      "id": 4
+    },
+    {
+      "Clinic Info": "",
+      "ClinicName": "",
+      "Cliniclocation": "",
+      "ClinicTimings": "",
+      "ClinicContactNumber": "",
+      "Description": "",
+      "id": 5
+    }
+  ],
+  "Schedule": [
+    {
+      "id": 7
+    }
+  ]
+}
