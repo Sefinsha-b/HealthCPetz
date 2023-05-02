@@ -16,8 +16,8 @@ import { AddDoctorComponent } from './vets/components/add-doctor/add-doctor.comp
 import { HeaderComponent } from './shared/header/header.component';
 
 
-import { AddPetsComponent } from './pets/components/add-pets/add-pets.component';
-import { PetsComponent } from './pets/components/pets/pets.component';
+
+
 import { ClinicInformationComponent } from './clinics/components/clinic-information/clinic-information.component';
 import { AddClinicComponent } from './clinics/components/add-clinic/add-clinic.component';
 import { AddDepartmentsComponent } from './department/components/add-departments/add-departments.component';
@@ -30,6 +30,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppiontmentsModule } from './appointments/appiontments.module';
 import { ActivatedRoute } from '@angular/router';
 import { EditDoctorComponent } from './vets/components/edit-doctor/edit-doctor.component';
+import { AddpetsComponent } from './pets/components/addpets/addpets.component';
+import { ViewPetComponent } from './pets/components/view-pet/view-pet.component';
+import { EditPetComponent } from './pets/components/edit-pet/edit-pet.component';
 
 
 @NgModule({
@@ -43,16 +46,21 @@ import { EditDoctorComponent } from './vets/components/edit-doctor/edit-doctor.c
     AllAppointmentsComponent,
     DoctorsComponent,
     AddDoctorComponent,
-    AddPetsComponent,
+    AppComponent,
     ScheduleComponent,
     AddScheduleComponent,
     DepartmentsComponent,
     AddDepartmentsComponent,
     HeaderComponent,
     AddClinicComponent,
-    AddPetsComponent,
-    PetsComponent,
-    EditDoctorComponent
+    EditDoctorComponent,
+    AddpetsComponent,
+    ViewPetComponent,
+    EditPetComponent,
+   
+    
+    
+   
   ],
   imports: [
     BrowserModule,

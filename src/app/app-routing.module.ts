@@ -9,9 +9,6 @@ import { AddClinicComponent } from './clinics/components/add-clinic/add-clinic.c
 
 
 
-import { AddPetsComponent } from './pets/components/add-pets/add-pets.component';
-import { PetsComponent } from './pets/components/pets/pets.component';
-
 import { LoginComponent } from './shared/login/login.component';
 import { SignupComponent } from './shared/signup/signup.component';
 import { AddDoctorComponent } from './vets/components/add-doctor/add-doctor.component';
@@ -23,6 +20,9 @@ import { AddScheduleComponent } from './schedule/components/add-schedule/add-sch
 import { ScheduleComponent } from './schedule/components/schedule/schedule.component';
 import { EditAppointmentComponent } from './appointments/components/edit-appointment/edit-appointment.component';
 import { EditDoctorComponent } from './vets/components/edit-doctor/edit-doctor.component';
+import { EditPetComponent } from './pets/components/edit-pet/edit-pet.component';
+import { AddpetsComponent } from './pets/components/addpets/addpets.component';
+import { ViewPetComponent } from './pets/components/view-pet/view-pet.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -33,14 +33,19 @@ const routes: Routes = [
   { path: 'allAppointments', component: AllAppointmentsComponent },
   { path: 'dashboard', component: AdminDashboardComponent },
   { path: 'addAppointments', component: AddAppointmentComponent },
+  { path: 'Editappointment/:id', component:EditAppointmentComponent},
+
 
   { path: 'vets', component: DoctorsComponent },
   { path: 'addVets', component: AddDoctorComponent },
   { path: 'Editvets/:id', component:EditDoctorComponent},
 
-  { path: 'pets', component: PetsComponent },
-  { path: 'addPets', component: AddPetsComponent },
+  { path: 'Pets', component:ViewPetComponent},
+  { path: 'addPets', component:AddpetsComponent },
+  { path: 'Editpets/:id', component:EditPetComponent },
 
+
+  
   { path: 'schedule', component: ScheduleComponent },
   { path: 'addSchedule', component: AddScheduleComponent },
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AddAppiontmentService } from '../../services/add-appiontment.service';
 
 @Component({
   selector: 'app-all-appointments',
@@ -6,23 +7,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./all-appointments.component.css']
 })
 export class AllAppointmentsComponent implements OnInit {
+  ViewAppo: any;
 
-  constructor() { }
+  constructor(private ConsAppoi: AddAppiontmentService) { }
 
   ngOnInit(): void {
+    this.GetViewAppoinment();
   }
+  GetViewAppoinment() {
+    return this.ConsAppoi.GetAppointmentData().subscribe((resp => {
+      this.ViewAppo = resp;
 
-
-  list:boolean=false;
-  card:boolean=true;
-
-  lists(){
-    this.list =!this.list;
-    this.card =!this.card;
+    }))
   }
-  cards(){
-    this.card =!this.card;
-    this.list =!this.list;
+  DeleteAppointment(data:any){
+    return this.ConsAppoi.DeleteAppointmentApi(data.id).subscribe((resp)=>{
+      alert("Data Deleted Successfully")
+      window.location.reload();
+    })
   }
 
 }

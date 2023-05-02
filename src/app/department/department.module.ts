@@ -4,8 +4,11 @@ import { DepartmentRoutingModule } from './department-routing.module';
 import { FormsModule } from '@angular/forms';
 
 
+
 @NgModule({
-  declarations: [],
+  declarations: [
+   
+  ],
   imports: [
     CommonModule,
     DepartmentRoutingModule,

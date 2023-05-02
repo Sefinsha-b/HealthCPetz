@@ -8,13 +8,26 @@ export class AddPetsService {
 
   constructor (private http: HttpClient) { }
 
-  url: string = '  http://localhost:3000';
+  url: string =  'http://localhost:3000';
 
 
-  PostPetsData(data:any){
+  PostPetsApi(data:any){
     return this.http.post(this.url+"/Pets",data);
   }
-  GetPetsData(){
-    return this.http.get(this.url+"/Pets");
+  GetPetsApi(){
+    return this.http.get<any>(this.url+"/Pets");
+
   }
-}
+
+  //Put
+  PutGetPetApService(id:any){
+  return this.http.get(`${this.url + '/Pets'}/${id}`)
+  }
+  PutPetsApiService(id:any,data:any){
+    return this.http.put(`${this.url + '/Pets'}/${id}`, data)
+  }
+  DeletePetService(id:any){
+    return this.http.delete(this.url + '/Pets/' + id)
+  }
+  }
+

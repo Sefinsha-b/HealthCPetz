@@ -13,15 +13,28 @@ export class AddAppiontmentService {
 
   url: string = "http://localhost:3000";
   
-  GetAppointmentData(){
-    return this.http.get(this.url+"/Appointments");
-  }
 
   PostAppointmentData(data:any){
     return this.http.post(this.url+"/Appointments",data);
   }
 
+  GetAppointmentData(){
+    return this.http.get(this.url+"/Appointments");
+  }
 
+ 
+
+  // Put method
+  PutGetAppointmnetService(id:any){
+    return this.http.get(`${this.url + '/Appointments'}/${id}`);
+  }
+  putAppointmentService(id:any,data:any){
+    return this.http.put(`${this.url + '/Appointments'}/${id}`,data);
+  }
+//deleteMethod
+DeleteAppointmentApi( id:any){
+  return this.http.delete(this.url + '/Appointments/' + id)
+}
   
 }
 

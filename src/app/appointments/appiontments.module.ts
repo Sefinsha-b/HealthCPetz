@@ -11,6 +11,8 @@ import { EditAppointmentComponent } from './components/edit-appointment/edit-app
   declarations: [
     AddAppointmentComponent,
     EditAppointmentComponent
+    
+
   ],
   imports: [
     CommonModule,

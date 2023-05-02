@@ -1,68 +1,30 @@
-<div class="container">
-    <div class="row">
-       <form >
-        
-                <h4>Appointment</h4>
-
-                <div class="mb-3">
-                    <label for="disabledTextInput" class="form-label">AppointmentID</label>
-                    <input type="text" id="disabledTextInput" formControlName="AppointmentID" class="form-control" ngModel
-                      >
-                      <!-- <div *ngIf="add['AppointmentID'].errors"> 
-
-                      </div> -->
-                      
-
-                </div>
-                <div class="mb-3">
-                    <label for="disabledTextInput" class="form-label">AppointmentDate</label>
-
-                    <input type="date" id="disabledTextInput" formControlName="AppointmentDate"
-                        class="form-control" min="2023-03-02" max="2023-03-31" ngModel > 
-                       
-                   
-
-                </div>
-
-                <div class="mb-3">
-                    <label for="disabledTextInput" class="form-label">AppointmentTime</label>
-                    <input type="time" id="disabledTextInput" formControlName="AppointmentTime" class="form-control" ngModel>
-                   
-
-                </div>
-
-
-                <div class="mb-3">
-                    <label for="disabledSelect" class="form-label">DoctorName</label>
-                    <select class="form-select" formControlName="DoctorName" ngModel>
-                        <option  selected>--Select Doctor--</option>
-                    
-                    </select> 
-                  
-
-
-
-                <div class="mb-3">
-                    <label for="disabledSelect" class="form-label">Department</label>
-                    <select class="form-select" formControlName="Department" ngModel>
-                        <option  selected>--Select Department--</option>
-                         <!-- <option *ngFor="let department of DataAppointments">{{department.Department}} </option> -->
-                        </select> 
-                       
-                    
-                   
-                </div>
-                </div>
-                <div class="mb-3">
-                    <label for="disabledTextInput" class="form-label">PetOwnerName</label>
-                    <input type="text" id="disabledTextInput" formControlName="PetOwnerName" class="form-control" ngModel
-                      >
-                      
-
-                </div>
-
-                 <button type="submit" class="btn btn-primary mb-3" >Create</button>    
-        </form>
-    
-</div> 
-
+<body>
+    <div class="container">
+    <div class="form-row">
+    <form [formGroup]="addAppointmentForm" (ngSubmit)="UpdateFetch()">
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">PetName</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="PetName">
+      
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Department</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="Department">
+        <option *ngFor="let Appointment of AppOiDAta" {{Appointment .Department}}></option>
+      </div>
+     
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">VetName</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="VetName">
+   
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">More Details</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="MoreDetails">
+   
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  </div>
+  </body>

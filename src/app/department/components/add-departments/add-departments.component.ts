@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DepartmentService } from '../department.service';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-add-departments',
@@ -10,6 +11,17 @@ export class AddDepartmentsComponent implements OnInit {
   getDepartment: any;
 
   constructor(private AddDepartment:DepartmentService) { }
+  get add() {
+    return this.addDepartmentForm.controls;
+  }
+  addDepartmentForm = new FormGroup({
+    DepartmentName: new FormControl(""),
+    Description: new FormControl(""),
+    Active: new FormControl(""),
+    Inactive: new FormControl("")
+    
+    
+  })
 
   ngOnInit(): void {
     this.fetchDepartment();

@@ -1,61 +1,9 @@
 {
   "Appointments": [
     {
-      "AppointmentID": "",
-      "AppointmentDate": "",
-      "AppointmentTime": "",
-      "DoctorName": "",
-      "Department": "",
-      "PetOwnerName": "",
-      "id": 1
-    },
-    {
-      "Name": "",
-      "Speciality": "",
-      "Address": "",
-      "id": 2
-    },
-    {
-      "Name": "",
-      "Speciality": "",
-      "Address": "",
-      "id": 3
-    },
-    {
-      "Name": "",
-      "Speciality": "",
-      "Address": "",
-      "id": 4
-    },
-    {
-      "Name": "Sefin",
-      "Speciality": "Sefin",
-      "Address": "Sefin",
-      "id": 5
-    },
-    {
-      "Name": "",
-      "Speciality": "",
-      "Address": "",
-      "id": 6
-    },
-    {
-      "Name": "dwewedwe",
-      "Speciality": "dwedwe",
-      "Address": "dwedwed",
-      "id": 7
-    },
-    {
-      "PetName": "Sefin",
-      "Department": "fdscsc",
-      "VetName": "scascdas",
-      "MoreDetails": "dasd",
-      "id": 8
-    },
-    {
-      "PetName": "",
-      "Department": "",
-      "VetName": "",
+      "PetName": "sxascascas",
+      "Department": "csacas",
+      "VetName": "sc",
       "MoreDetails": "cscsdcsdcsdcsdcvsdvdvdvcdcascsdcsdcsdcsdc",
       "id": 9
     }
@@ -68,7 +16,59 @@
     },
     {
       "DepartmentName": "",
+      "Description": "adwawda",
+      "Active": "option1",
+      "Inactive": "",
       "id": 2
+    },
+    {
+      "DepartmentName": "",
+      "Description": "adwawda",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 3
+    },
+    {
+      "DepartmentName": "",
+      "Description": "adwawda",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 4
+    },
+    {
+      "DepartmentName": "",
+      "Description": "adwawda",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 5
+    },
+    {
+      "DepartmentName": "",
+      "Description": "",
+      "Active": "",
+      "Inactive": "",
+      "id": 6
+    },
+    {
+      "DepartmentName": "",
+      "Description": "",
+      "Active": "",
+      "Inactive": "",
+      "id": 7
+    },
+    {
+      "DepartmentName": "",
+      "Description": "",
+      "Active": "",
+      "Inactive": "",
+      "id": 8
+    },
+    {
+      "DepartmentName": "",
+      "Description": "sX",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 9
     }
   ],
   "Vets": [
@@ -83,23 +83,26 @@
       "Speciality": "",
       "Address": "",
       "id": 19
+    },
+    {
+      "Name": "asd",
+      "Speciality": "asd",
+      "Address": "asd",
+      "id": 20
+    },
+    {
+      "Name": "Sefin",
+      "Speciality": "Sefin",
+      "Address": "Sefin",
+      "id": 21
     }
   ],
   "Pets": [
     {
-      "id": 3
-    },
-    {
-      "Pets Owner FirstName": "",
-      "Pets Owner LastName": "",
-      "Pets OwnerEmail": "",
-      "Pets Name": "",
-      "PetsBreed": "",
-      "Pet Age": "",
-      "gender": "",
-      "Address": "",
-      "Phone": "",
-      "Biography": "",
+      "FirstName": "sefinsha4@gmail.com",
+      "Age": "das",
+      "OwnerEmail": "asd",
+      "Gender": "cszc",
       "id": 4
     }
   ],
