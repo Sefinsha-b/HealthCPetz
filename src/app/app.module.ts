@@ -33,6 +33,7 @@ import { EditDoctorComponent } from './vets/components/edit-doctor/edit-doctor.c
 import { AddpetsComponent } from './pets/components/addpets/addpets.component';
 import { ViewPetComponent } from './pets/components/view-pet/view-pet.component';
 import { EditPetComponent } from './pets/components/edit-pet/edit-pet.component';
+import { EditDepartmentComponent } from './department/components/edit-department/edit-department.component';
 
 
 @NgModule({
@@ -57,6 +58,8 @@ import { EditPetComponent } from './pets/components/edit-pet/edit-pet.component'
     AddpetsComponent,
     ViewPetComponent,
     EditPetComponent,
+    EditDepartmentComponent
+  
    
     
     

@@ -29,11 +29,17 @@ export class AddDepartmentsComponent implements OnInit {
 fetchDepartment(){
   return this.AddDepartment.GetDepartmentData().subscribe((resp:any)=>{
     this.getDepartment=resp;
+    console.log(resp);
   })
 }
-postDepartmentFormData(data :any) {
-  console.warn(data);
-  this.AddDepartment.postDepartmentData(data).subscribe((result)=>{
+
+
+postDepartmentFormData() {
+  
+  this.AddDepartment.postDepartmentData(this.addDepartmentForm.value).subscribe((result)=>{
+    console.log(result);
+    alert("sucessfully Added");
+    
   
   })
 }

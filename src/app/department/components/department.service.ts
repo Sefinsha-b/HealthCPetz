@@ -16,5 +16,12 @@ GetDepartmentData(){
 postDepartmentData(data:any){
   return this.http.post(this.url+"/Departments",data)
 }
+// PUT
+PutGetDepartmentService(id:any){
+  return this.http.get(`${this.url + '/Departments'}/${id}`);
+}
+putDepartmentService(id:any,data:any){
+  return this.http.put(`${this.url + '/Departments'}/${id}`,data);
+}
 }
 

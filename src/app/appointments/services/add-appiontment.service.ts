@@ -7,6 +7,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AddAppiontmentService {
+  putDepartmentService(arg0: any, value: Partial<{ DepartmentName: string | null; Description: string | null; Active: string | null; Inactive: string | null; }>) {
+    throw new Error('Method not implemented.');
+  }
 
   // Inject Repository in the constructor
   constructor (private http: HttpClient) { }

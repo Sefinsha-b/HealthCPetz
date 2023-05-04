@@ -43,7 +43,7 @@ UpdateFetch(){
     console.log(resp);
     this.AppOiDAta=resp;
     alert("update successfully..!");
-    // window.location.reload();
+    window.location.reload();
   })
 }
 

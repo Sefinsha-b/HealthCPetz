@@ -23,6 +23,7 @@ import { EditDoctorComponent } from './vets/components/edit-doctor/edit-doctor.c
 import { EditPetComponent } from './pets/components/edit-pet/edit-pet.component';
 import { AddpetsComponent } from './pets/components/addpets/addpets.component';
 import { ViewPetComponent } from './pets/components/view-pet/view-pet.component';
+import { EditDepartmentComponent } from './department/components/edit-department/edit-department.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -51,6 +52,8 @@ const routes: Routes = [
 
   { path: 'departments', component: DepartmentsComponent },
   { path: 'addDepartment', component: AddDepartmentsComponent },
+  { path: 'editDepartment/:id', component:EditDepartmentComponent },
+
 
 
 

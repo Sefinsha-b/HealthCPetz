@@ -7,10 +7,18 @@ import { DepartmentService} from '../department.service';
   styleUrls: ['./departments.component.css']
 })
 export class DepartmentsComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  ViewDeparteData:any;
+  constructor(private ConsDepart: DepartmentService) { }
 
+  ngOnInit(): void {
+    this.GetViewDepartment();
+  }
+  GetViewDepartment() {
+    return this.ConsDepart.GetDepartmentData().subscribe((resp => {
+      this.ViewDeparteData = resp;
+
+    }))
+  }
 
  
 
