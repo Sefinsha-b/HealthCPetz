@@ -6,62 +6,22 @@
       <div class="row">
         <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
           <div class="dash-widget">
-            <span class="dash-widget-bg3"
-              ><i class="fa fa-user-md" aria-hidden="true"></i
-            ></span>
+            <span class="dash-widget-bg3"><i class="fa fa-user-md" aria-hidden="true"></i></span>
             <div class="dash-widget-info text-right">
-              <h3>72</h3>
-              <span class="widget-title3"
-                >Total <i class="fa fa-check" aria-hidden="true"></i
-              ></span>
+              <h3>{{totalAppointment.length}}</h3>
+              <span class="widget-title3">Total <i class="fa fa-check" aria-hidden="true"></i></span>
               <span>
                 Appointments
               </span>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-            <div class="dash-widget">
-              <span class="dash-widget-Cancelled"
-                ><i class="fa fa-user-o" aria-hidden="true"></i
-              ></span>
-              <div class="dash-widget-info text-right">
-                <h3>20</h3>
-                <span class="Cancelled"
-                  >Cancelled <i class="fa fa-check" aria-hidden="true"></i
-                ></span>
-                <span>
-                  Appointments
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-            <div class="dash-widget">
-              <span class="dash-widget-Approved"
-                ><i class="fa fa-user-o" aria-hidden="true"></i
-              ></span>
-              <div class="dash-widget-info text-right">
-                <h3>50</h3>
-                <span class="Approved"
-                  >Approved <i class="fa fa-check" aria-hidden="true"></i
-                ></span>
-                <span>
-                  Appointments
-                </span>
-              </div>
-            </div>
-          </div>
         <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
           <div class="dash-widget">
-            <span class="dash-widget-Pending"
-              ><i class="fa fa-user-o" aria-hidden="true"></i
-            ></span>
+            <span class="dash-widget-Cancelled"><i class="fa fa-user-o" aria-hidden="true"></i></span>
             <div class="dash-widget-info text-right">
-              <h3>2</h3>
-              <span class="Pending"
-                >Pending <i class="fa fa-check" aria-hidden="true"></i
-              ></span>
+              <h3>20</h3>
+              <span class="Cancelled">Cancelled <i class="fa fa-check" aria-hidden="true"></i></span>
               <span>
                 Appointments
               </span>
@@ -69,39 +29,56 @@
           </div>
         </div>
         <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-            <div class="dash-widget">
-              <span class="dash-widget-bg1"
-                ><i class="fa fa-stethoscope" aria-hidden="true"></i
-              ></span>
-              <div class="dash-widget-info text-right">
-                <h3>98</h3>
-                <span class="widget-title1"
-                  >Vets <i class="fa fa-check" aria-hidden="true"></i
-                ></span>
-              </div>
+          <div class="dash-widget">
+            <span class="dash-widget-Approved"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+            <div class="dash-widget-info text-right">
+              <h3>50</h3>
+              <span class="Approved">Approved <i class="fa fa-check" aria-hidden="true"></i></span>
+              <span>
+                Appointments
+              </span>
             </div>
           </div>
-          <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-            <div class="dash-widget">
-              <span class="dash-widget-bg2"><i class="fa fa-user-o"></i></span>
-              <div class="dash-widget-info text-right">
-                <h3>1072</h3>
-                <span class="widget-title2"
-                  >Pets <i class="fa fa-check" aria-hidden="true"></i
-                ></span>
-              </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+          <div class="dash-widget">
+            <span class="dash-widget-Pending"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+            <div class="dash-widget-info text-right">
+              <h3>2</h3>
+              <span class="Pending">Pending <i class="fa fa-check" aria-hidden="true"></i></span>
+              <span>
+                Appointments
+              </span>
             </div>
           </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+          <div class="dash-widget">
+            <span class="dash-widget-bg1"><i class="fa fa-stethoscope" aria-hidden="true"></i></span>
+            <div class="dash-widget-info text-right">
+              <h3>{{totalVets.length}}</h3>
+              <span class="widget-title1">Vets <i class="fa fa-check" aria-hidden="true"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+          <div class="dash-widget">
+            <span class="dash-widget-bg2"><i class="fa fa-user-o"></i></span>
+            <div class="dash-widget-info text-right">
+              <h3>{{totalPets
+                .length}}</h3>
+              <span class="widget-title2">Pets <i class="fa fa-check" aria-hidden="true"></i></span>
+            </div>
+          </div>
+        </div>
       </div>
-      
+
       <div class="row">
         <div class="col-12 col-md-6 col-lg-8 col-xl-8">
           <div class="card">
             <div class="card-header">
               <h4 class="card-title d-inline-block">Upcoming Appointments</h4>
-              <a href="allAppointments" class="btn btn-primary float-right"
-                >View all</a
-              >
+              <a href="allAppointments" class="btn btn-primary float-right">View all</a>
             </div>
             <div class="card-body p-0">
               <div class="table-responsive">
@@ -117,11 +94,9 @@
                   <tbody>
                     <tr>
                       <td style="min-width: 200px">
-                        <a class="avatar" >B</a>
+                        <a class="avatar">B</a>
                         <h2>
-                          <a 
-                            >Bernardo Galaviz <span>New York, USA</span></a
-                          >
+                          <a>Bernardo Galaviz <span>New York, USA</span></a>
                         </h2>
                       </td>
                       <td>
@@ -133,20 +108,14 @@
                         <p>7.00 PM</p>
                       </td>
                       <td class="text-right">
-                        <a
-                          href="allAppointments"
-                          class="btn btn-outline-primary take-btn"
-                          >Take up</a
-                        >
+                        <a href="allAppointments" class="btn btn-outline-primary take-btn">Take up</a>
                       </td>
                     </tr>
                     <tr>
                       <td style="min-width: 200px">
-                        <a class="avatar" >B</a>
+                        <a class="avatar">B</a>
                         <h2>
-                          <a 
-                            >Bernardo Galaviz <span>New York, USA</span></a
-                          >
+                          <a>Bernardo Galaviz <span>New York, USA</span></a>
                         </h2>
                       </td>
                       <td>
@@ -158,20 +127,14 @@
                         <p>7.00 PM</p>
                       </td>
                       <td class="text-right">
-                        <a
-                          href="allAppointments"
-                          class="btn btn-outline-primary take-btn"
-                          >Take up</a
-                        >
+                        <a href="allAppointments" class="btn btn-outline-primary take-btn">Take up</a>
                       </td>
                     </tr>
                     <tr>
                       <td style="min-width: 200px">
-                        <a class="avatar" >B</a>
+                        <a class="avatar">B</a>
                         <h2>
-                          <a 
-                            >Bernardo Galaviz <span>New York, USA</span></a
-                          >
+                          <a>Bernardo Galaviz <span>New York, USA</span></a>
                         </h2>
                       </td>
                       <td>
@@ -183,20 +146,14 @@
                         <p>7.00 PM</p>
                       </td>
                       <td class="text-right">
-                        <a
-                          href="allAppointments"
-                          class="btn btn-outline-primary take-btn"
-                          >Take up</a
-                        >
+                        <a href="allAppointments" class="btn btn-outline-primary take-btn">Take up</a>
                       </td>
                     </tr>
                     <tr>
                       <td style="min-width: 200px">
-                        <a class="avatar" >B</a>
+                        <a class="avatar">B</a>
                         <h2>
-                          <a 
-                            >Bernardo Galaviz <span>New York, USA</span></a
-                          >
+                          <a>Bernardo Galaviz <span>New York, USA</span></a>
                         </h2>
                       </td>
                       <td>
@@ -208,20 +165,14 @@
                         <p>7.00 PM</p>
                       </td>
                       <td class="text-right">
-                        <a
-                          href="allAppointments"
-                          class="btn btn-outline-primary take-btn"
-                          >Take up</a
-                        >
+                        <a href="allAppointments" class="btn btn-outline-primary take-btn">Take up</a>
                       </td>
                     </tr>
                     <tr>
                       <td style="min-width: 200px">
-                        <a class="avatar" >B</a>
+                        <a class="avatar">B</a>
                         <h2>
-                          <a 
-                            >Bernardo Galaviz <span>New York, USA</span></a
-                          >
+                          <a>Bernardo Galaviz <span>New York, USA</span></a>
                         </h2>
                       </td>
                       <td>
@@ -233,11 +184,7 @@
                         <p>7.00 PM</p>
                       </td>
                       <td class="text-right">
-                        <a
-                          href="allAppointments"
-                          class="btn btn-outline-primary take-btn"
-                          >Take up</a
-                        >
+                        <a href="allAppointments" class="btn btn-outline-primary take-btn">Take up</a>
                       </td>
                     </tr>
                   </tbody>
@@ -256,14 +203,8 @@
                 <li>
                   <div class="contact-cont">
                     <div class="float-left user-img m-r-10">
-                      <a  title="John Doe"
-                        ><img
-                          src="assets/img/user.jpg"
-                          alt=""
-                          class="w-40 rounded-circle" /><span
-                          class="status online"
-                        ></span
-                      ></a>
+                      <a title="John Doe"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle" /><span
+                          class="status online"></span></a>
                     </div>
                     <div class="contact-info">
                       <span class="contact-name text-ellipsis">John Doe</span>
@@ -274,19 +215,11 @@
                 <li>
                   <div class="contact-cont">
                     <div class="float-left user-img m-r-10">
-                      <a  title="Richard Miles"
-                        ><img
-                          src="assets/img/user.jpg"
-                          alt=""
-                          class="w-40 rounded-circle" /><span
-                          class="status offline"
-                        ></span
-                      ></a>
+                      <a title="Richard Miles"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle" /><span
+                          class="status offline"></span></a>
                     </div>
                     <div class="contact-info">
-                      <span class="contact-name text-ellipsis"
-                        >Richard Miles</span
-                      >
+                      <span class="contact-name text-ellipsis">Richard Miles</span>
                       <span class="contact-date">MD</span>
                     </div>
                   </div>
@@ -294,14 +227,8 @@
                 <li>
                   <div class="contact-cont">
                     <div class="float-left user-img m-r-10">
-                      <a  title="John Doe"
-                        ><img
-                          src="assets/img/user.jpg"
-                          alt=""
-                          class="w-40 rounded-circle" /><span
-                          class="status away"
-                        ></span
-                      ></a>
+                      <a title="John Doe"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle" /><span
+                          class="status away"></span></a>
                     </div>
                     <div class="contact-info">
                       <span class="contact-name text-ellipsis">John Doe</span>
@@ -312,19 +239,11 @@
                 <li>
                   <div class="contact-cont">
                     <div class="float-left user-img m-r-10">
-                      <a  title="Richard Miles"
-                        ><img
-                          src="assets/img/user.jpg"
-                          alt=""
-                          class="w-40 rounded-circle" /><span
-                          class="status online"
-                        ></span
-                      ></a>
+                      <a title="Richard Miles"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle" /><span
+                          class="status online"></span></a>
                     </div>
                     <div class="contact-info">
-                      <span class="contact-name text-ellipsis"
-                        >Richard Miles</span
-                      >
+                      <span class="contact-name text-ellipsis">Richard Miles</span>
                       <span class="contact-date">MS, MD</span>
                     </div>
                   </div>
@@ -332,14 +251,8 @@
                 <li>
                   <div class="contact-cont">
                     <div class="float-left user-img m-r-10">
-                      <a  title="John Doe"
-                        ><img
-                          src="assets/img/user.jpg"
-                          alt=""
-                          class="w-40 rounded-circle" /><span
-                          class="status offline"
-                        ></span
-                      ></a>
+                      <a title="John Doe"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle" /><span
+                          class="status offline"></span></a>
                     </div>
                     <div class="contact-info">
                       <span class="contact-name text-ellipsis">John Doe</span>
@@ -350,19 +263,11 @@
                 <li>
                   <div class="contact-cont">
                     <div class="float-left user-img m-r-10">
-                      <a  title="Richard Miles"
-                        ><img
-                          src="assets/img/user.jpg"
-                          alt=""
-                          class="w-40 rounded-circle" /><span
-                          class="status away"
-                        ></span
-                      ></a>
+                      <a title="Richard Miles"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle" /><span
+                          class="status away"></span></a>
                     </div>
                     <div class="contact-info">
-                      <span class="contact-name text-ellipsis"
-                        >Richard Miles</span
-                      >
+                      <span class="contact-name text-ellipsis">Richard Miles</span>
                       <span class="contact-date">MBBS, MD</span>
                     </div>
                   </div>
@@ -370,13 +275,13 @@
               </ul>
             </div>
             <div class="card-footer text-center bg-white">
-              <a  class="text-muted">View all Doctors</a>
+              <a class="text-muted">View all Doctors</a>
             </div>
           </div>
         </div>
       </div>
-      
+
     </div>
-  
+
   </div>
 </div>
